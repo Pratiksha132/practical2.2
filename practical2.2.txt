@@ -1,0 +1,16 @@
+def average():
+   b=[]
+   n=int(input("Enter the students count of class:"))
+   for i in range(n):
+        print("Enter the marks scored in fds for student %i:"%(i+1))
+        var=int(input())
+        b.append(var)
+   sum=0
+ 
+   for i in range(len(b)):
+     if(b[i]!=-1):
+         sum=sum+b[i]
+   avg=sum/len(b)
+   print("average score of class:",avg)
+   print("sum=",sum)
+average()
